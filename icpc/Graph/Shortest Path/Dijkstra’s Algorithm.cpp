@@ -11,7 +11,7 @@ int main() {
         // adj[v].push_back({u, w}); // for undirected
     }
 
-    int s; cin >> s; // source
+    int s; cin >> s; 
     vector<long long> dist(n, LLONG_MAX);
     dist[s] = 0;
     priority_queue<pair<long long,int>, vector<pair<long long,int>>, greater<>> pq;
@@ -32,3 +32,8 @@ int main() {
     for(int i=0;i<n;i++)
         cout << "Distance from " << s << " to " << i << ": " << dist[i] << "\n";
 }
+//Single-source shortest path.
+
+//Works only for non-negative edge weights.
+
+//Uses priority queue (min-heap).

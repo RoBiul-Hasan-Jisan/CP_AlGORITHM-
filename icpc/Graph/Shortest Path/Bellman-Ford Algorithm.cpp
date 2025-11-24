@@ -31,3 +31,8 @@ int main() {
     else for(int i=0;i<n;i++)
         cout << "Distance from " << s << " to " << i << ": " << dist[i] << "\n";
 }
+//Single-source shortest path.
+
+//Works even if edges have negative weights.
+
+//Detects negative cycles.
